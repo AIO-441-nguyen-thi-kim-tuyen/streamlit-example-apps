@@ -1,5 +1,5 @@
 import streamlit as st
-
+import os
 
 def levenshtein_distance(token1, token2):
     distances = [[0] * (len(token2) + 1) for i in range(len(token1) + 1)]
@@ -41,7 +41,6 @@ def load_vocab(file_path):
     return words
 
 
-import os
 file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)) + '/data/vocab.txt'
 # print("VOCABS:%s" % file_path)
 vocabs = load_vocab(file_path=file_path)
