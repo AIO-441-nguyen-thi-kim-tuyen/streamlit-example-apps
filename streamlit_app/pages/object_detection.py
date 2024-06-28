@@ -31,7 +31,7 @@ def annotate_image(
             # extract the index of the class label from the `detections`,
             # then compute the (x, y)-coordinates of the bounding box for
             # the object
-            idx = int(detections[0, 0, i, 1])
+            # idx = int(detections[0, 0, i, 1])
             box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
             (startX, startY, endX, endY) = box.astype("int")
             cv2.rectangle(image, (startX, startY), (endX, endY), 70, 2)
