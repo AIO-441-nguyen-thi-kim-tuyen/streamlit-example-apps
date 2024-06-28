@@ -1,10 +1,11 @@
 from streamlit.testing.v1 import AppTest
-import cv2
-from PIL import Image
-from PIL import ImageOps
 import numpy as np
-import os
-from streamlit_app.pages.object_detection import process_image, annotate_image
+
+# import cv2
+# from PIL import Image
+# from PIL import ImageOps
+# import os
+# from streamlit_app.pages.object_detection import process_image, annotate_image
 
 
 def test_smoke_page_input():
